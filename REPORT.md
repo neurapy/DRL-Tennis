@@ -35,8 +35,6 @@ For environments with continuous action spaces, exploration is achieved by addin
 
 The target networks' weights are slowly updated towards the actual networks' weights using soft updates, where the weights of the target networks are adjusted incrementally to match the actual networks' weights.
 
-![Soft Updates](/assets/soft_updates.png)
-
 ## Model Architecture
 
 ### Actor
@@ -50,8 +48,6 @@ The target networks' weights are slowly updated towards the actual networks' wei
   - ReLU for hidden layers
   - Tanh for output layer
 
-![Actor Architecture](/assets/actor_architecture.png)
-
 ### Critic
 
 - **Architecture**: 
@@ -62,8 +58,6 @@ The target networks' weights are slowly updated towards the actual networks' wei
 - **Activation Functions**: 
   - ReLU for hidden layers
   - None for output layer
-
-![Critic Architecture](/assets/critic_architecture.png)
 
 ## Hyperparameters
 
@@ -76,8 +70,6 @@ The target networks' weights are slowly updated towards the actual networks' wei
 - `mu`: 0
 - `theta`: 0.15
 - `sigma`: 0.2
-
-![Hyperparameters](/assets/hyperparameters.png)
 
 ## Training Results
 
