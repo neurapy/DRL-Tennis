@@ -10,19 +10,13 @@ In this project, we implement a Multi-Agent version of the DDPG (Deep Determinis
 
 The Actor network maps states directly to actions, delivering the action to take (rather than a probability distribution), making it well-suited for environments with a continuous action space.
 
-![Actor Network](/assets/actor_network.png)
-
 ### Critic Network
 
 The Critic network evaluates the quality of actions taken by the Actor, accelerating learning by providing feedback on the actions' effectiveness.
 
-![Critic Network](/assets/critic_network.png)
-
 ### Experience Replay
 
 Experience replay is employed to store and sample past experiences (state, action, reward, next state, done tuples) to break the correlation between consecutive experiences. This is implemented in the `ReplayBuffer` class, which maintains a buffer of experiences and samples them randomly for training, ensuring that updates are based on uncorrelated experiences.
-
-![Experience Replay](/assets/experience_replay.png)
 
 ##### Noise Implementation
 
@@ -31,9 +25,7 @@ The Ornstein-Uhlenbeck process generates temporally correlated noise, suitable f
 - `theta`: The rate of mean reversion
 - `sigma`: The volatility parameter
 
-This noise is added to the actions to ensure adequate exploration during training. The implementation details are encapsulated in the `OUNoise` class.
-
-![Noise Implementation](/assets/noise_implementation.png)
+This noise is added to the actions to ensure adequate exploration during training. 
 
 ### Exploration Strategy
 
