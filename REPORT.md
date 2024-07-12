@@ -25,7 +25,7 @@ The Ornstein-Uhlenbeck process generates temporally correlated noise, suitable f
 - `theta`: The rate of mean reversion
 - `sigma`: The volatility parameter
 
-This noise is added to the actions to ensure adequate exploration during training. 
+This noise is added to the actions to ensure adequate exploration during training. The implementation details are encapsulated in the `OUNoise` class.
 
 ### Exploration Strategy
 
@@ -64,7 +64,7 @@ The target networks' weights are slowly updated towards the actual networks' wei
 - `BUFFER_SIZE`: 100.000
 - `BATCH_SIZE`: 64
 - `GAMMA`: 0.99
-- `TAU`: 0.1
+- `TAU`: 0.07
 - `LR_ACTOR`: 0.0001
 - `LR_CRITIC`: 0.001
 - `mu`: 0
@@ -73,26 +73,26 @@ The target networks' weights are slowly updated towards the actual networks' wei
 
 ## Training Results
 
-### Different Batch Sizes
+### Different Batch & Buffer Sizes
 
-![Tuning Batch Sizes](/assets/tuning_batch.png)
+<p align="center">
+  <img src="assets/tuning_batch.png" alt="Tuning Batch Sizes" width="45%">
+  <img src="assets/tuning_buffer.png" alt="Tuning Buffer Sizes" width="45%">
+</p>
 
-### Different Buffer Sizes
-
-![Tuning Buffer Sizes](/assets/tuning_buffer.png)
-
-### Different Configurations
+### Different Hyperparameter Configurations
 
 ![Tuning Configurations](/assets/tuning_results_all.png)
 
 ### Final Training Run
 
-With the final configuration the agents struggled a bit and took 2420 episodes to solve the enviroment with an average score of 0.5.
+In the configuration the agents solved thetask in
+
+![Output Final](/assets/output_final.png)
 
 The algorithm took 1040 episodes to solve the environment with an average score of 0.51 in one of the Tuning-runs.
 
 ![High Tow](/assets/high_tow.png)
-![Output Final](/assets/output_final.png)
 
 ## Tuning
 
