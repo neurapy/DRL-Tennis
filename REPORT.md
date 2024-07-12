@@ -64,7 +64,7 @@ The target networks' weights are slowly updated towards the actual networks' wei
 - `BUFFER_SIZE`: 100.000
 - `BATCH_SIZE`: 64
 - `GAMMA`: 0.99
-- `TAU`: 0.07
+- `TAU`: 0.1
 - `LR_ACTOR`: 0.0001
 - `LR_CRITIC`: 0.001
 - `mu`: 0
@@ -75,10 +75,12 @@ The target networks' weights are slowly updated towards the actual networks' wei
 
 ### Different Batch & Buffer Sizes
 
-<p align="center">
-  <img src="assets/tuning_batch.png" alt="Tuning Batch Sizes" width="45%">
-  <img src="assets/tuning_buffer.png" alt="Tuning Buffer Sizes" width="45%">
-</p>
+<table>
+  <tr>
+    <td><img src="assets/tuning_batch.png" alt="Tuning Batch Sizes" height="75%"></td>
+    <td><img src="assets/tuning_buffer.png" alt="Tuning Buffer Sizes" height="75%"></td>
+  </tr>
+</table>
 
 ### Different Hyperparameter Configurations
 
@@ -86,13 +88,13 @@ The target networks' weights are slowly updated towards the actual networks' wei
 
 ### Final Training Run
 
-In the configuration the agents solved thetask in
+In the final configuration the agents solved the task in <-> episodes and got a score of <-> after 15.000 episodes!
 
 ![Output Final](/assets/output_final.png)
 
-The algorithm took 1040 episodes to solve the environment with an average score of 0.51 in one of the Tuning-runs.
+With the same parameters but just 128 fc1 units, the algorithm took 1040 episodes to solve the environment in the tuning run.
 
-![High Tow](/assets/high_tow.png)
+<img src="assets/high_tow.png" alt="High Tow" width="50%">
 
 ## Tuning
 
