@@ -4,7 +4,7 @@
 
 ## Learning Algorithm
 
-In this project, we implement a Multi-Agent version of the DDPG (Deep Deterministic Policy Gradient) algorithm to solve the Tennis environment. The DDPG algorithm combines the advantages of value-based and policy-based methods, using four neural networks per agent: a Q network (the Critic), a policy network (the Actor), a target Q network, and a target policy network. In the Tennis environment, two agents (one per player) with seperate Replay Buffers are created.
+This project implement a Multi-Agent version of the DDPG (Deep Deterministic Policy Gradient) algorithm to solve the Tennis environment. The DDPG algorithm combines the advantages of value-based and policy-based methods, using four neural networks per agent: a Q network (the Critic), a policy network (the Actor), a target Q network, and a target policy network. In the Tennis environment, two agents (one per player) with seperate Replay Buffers are created.
 
 ### Actor Network
 
