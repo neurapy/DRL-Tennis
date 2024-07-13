@@ -88,9 +88,9 @@ The target networks' weights are slowly updated towards the actual networks' wei
 
 ### Final Training Run
 
-In the final configuration the agents solved the task in <-> episodes and got a score of <-> after 15.000 episodes!
+In the final configuration the agents solved the task in 1661 episodes and got a score of 0.74 after 2.000 episodes.
 
-![Final Resultsl](results_final.png)
+![Final Resultsl](assets/results_final.png)
 
 With the same parameters but just 128 fc1 units, the algorithm took 1040 episodes to solve the environment in the tuning run.
 
@@ -122,4 +122,3 @@ To further improve the efficiency of the agents, several strategies can be consi
 - **Shared Replay Buffers**: The Agents could share a Replay Buffer to increase performance.
 - **Hyperparameter Tuning**: Experimenting with different sets of hyperparameters.
 - **Alternative Algorithms**: Trying different algorithms like Proximal Policy Optimization.
-
