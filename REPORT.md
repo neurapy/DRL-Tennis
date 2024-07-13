@@ -90,7 +90,7 @@ The target networks' weights are slowly updated towards the actual networks' wei
 
 In the final configuration the agents solved the task in <-> episodes and got a score of <-> after 15.000 episodes!
 
-![Output Final](/assets/output_final.png)
+![Final Resultsl](results_final.png)
 
 With the same parameters but just 128 fc1 units, the algorithm took 1040 episodes to solve the environment in the tuning run.
 
